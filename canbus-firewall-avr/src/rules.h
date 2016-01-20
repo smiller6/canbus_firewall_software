@@ -259,8 +259,8 @@ static int stored_sequence
 #define WDT_TIME_NEW_RULE_TEST_RESET_US 15000000  // really long wait for new rule ingestion testing
 
 #ifndef WDT_TIME_NEW_RULE_RESET
-#define WDT_TIME_NEW_RULE_RESET			WDT_TIME_NEW_RULE_RESET_US
-//#define WDT_TIME_NEW_RULE_RESET			WDT_TIME_NEW_RULE_TEST_RESET_US
+//#define WDT_TIME_NEW_RULE_RESET			WDT_TIME_NEW_RULE_RESET_US
+#define WDT_TIME_NEW_RULE_RESET			WDT_TIME_NEW_RULE_TEST_RESET_US
 #endif
 
 // options specific to the new rule watchdog reset case

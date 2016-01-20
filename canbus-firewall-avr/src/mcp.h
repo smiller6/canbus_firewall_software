@@ -32,8 +32,13 @@
 #define MCP_SPI		(&AVR32_SPI0)
 #endif
 
-#define MCP_DEFAULT_CAN_RATE_NORTH				MCP_VAL_CAN_1mbps_CLOCK_16Mhz
-#define MCP_DEFAULT_CAN_RATE_SOUTH				MCP_VAL_CAN_1mbps_CLOCK_16Mhz
+// Fastest CAN rate, used for testing performance and throughput
+// #define MCP_DEFAULT_CAN_RATE_NORTH				MCP_VAL_CAN_1mbps_CLOCK_16Mhz
+// #define MCP_DEFAULT_CAN_RATE_SOUTH				MCP_VAL_CAN_1mbps_CLOCK_16Mhz
+// 
+// "Medium" speed CAN rate used in ftype
+#define MCP_DEFAULT_CAN_RATE_NORTH					MCP_VAL_CAN_125kbps_CLOCK_16Mhz
+#define MCP_DEFAULT_CAN_RATE_SOUTH					MCP_VAL_CAN_125kbps_CLOCK_16Mhz
 
 #define MCP_DEFAULT_INTERRUPT_VALUE_NORTH		MCP_VAL_INT_RX_ENABLE
 #define MCP_DEFAULT_INTERRUPT_VALUE_SOUTH		MCP_VAL_INT_RX_ENABLE
